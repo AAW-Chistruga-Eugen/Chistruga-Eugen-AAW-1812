@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMW</title>
+	<style type="text/css">
+		body{
+			background-image: url("const.jpg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+		#logo{
+	width: 1520px;
+	height: 50px;
+	position: fixed;
+
+}
+div.logo{
+	position: fixed;
+	text-decoration: none;
+	margin-top: -10px;
+
+	width: 78px;
+	height: 60px;
+		background-image: url("logo4.png");
+		background-size: 100px 75px;
+		background-repeat: no-repeat;
+}
+div.logo:hover{
+	background-image: url("logo2.png");
+		background-size: 100px 75px;
+		background-repeat: no-repeat;
+}
+a.logo{
+	position: fixed;
+		border: none;
+	background-color: transparent;
+		font-weight: bold;
+		font-size: 25px;
+	margin: auto;
+	padding: 10px;
+	margin-left: 70px;
+	font-family: "Helvetica";
+	color: white;
+	text-decoration: none;
+}
+a.logo:hover{
+	color: #0064af;
+}
+#exit{
+	text-decoration: none; 
+	color:white; 
+	margin-left: 97%;
+	font-size: 30px;
+	 margin-top: 2px;
+}
+#exit:hover{
+	text-decoration: none; 
+	color:#0064af; 
+
+}
+#den{
+	margin-top: 35px;
+	margin-left: 50px;
+	
+}
+#bgcars{
+	
+	width: 400px;
+	height: 400px;
+	backdrop-filter: blur(5px);
+	margin-left: 50px;
+}
+.cars{
+	margin-top: -180px;
+	width: 150px;
+	height: 150px;
+	border-radius: 6px;
+	border:2px solid transparent;
+
+}
+.cars:hover{
+	border:2px solid #0064af;
+}
+
+.cars1{
+	margin-top: -150px;
+	width: 150px;
+	height: 150px;
+	border-radius: 6px;
+	border:2px solid transparent;
+}
+.cars1:hover{
+	border:2px solid #0064af;
+}
+.stil{
+
+		font-weight: bold;
+		font-size: 20px;
+	font-family: "Helvetica";
+	color: white;
+	text-decoration: none;
+
+}
+#Select{
+
+	background-color: #0064af;
+	margin-top: 100px;
+font-weight: bold;
+		font-size: 20px;
+	font-family: "Helvetica";
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+}
+#Select:hover{
+	border: 2px solid white;
+
+}
+	</style>
+</head>
+<body>
+	<div id="logo" >
+		<a href="E:\Lessons\Practica JS 2021/HTML.html"> <div class="logo" src="logo3.png"></div>
+		<a class="logo" href="E:\Lessons\Practica JS 2021/HTML.html" >BMW</a>
+		<a id="exit" href="E:\Lessons\Practica JS 2021/HTML.html">&#x26CC;</a>
+	<div id="den">
+		<img src="den2.png" style=" background-color: #0066b4;" width="40">
+		<p id="auto" style="margin-top: -44px; margin-left: 40px; background-color: white; border-radius: 0px 6px 6px 0px;
+		 width:350px; height: 30px;   font-weight: bold;
+    font-size: 25px; color: grey;	font-family: Helvetica; padding: 5px; ">Alegeți automobilul</p>
+	</div>
+	<div id="bgcars">
+			<p id="au" style=" background-color:#0066b4 ; width:390px; height: 20px; text-align: center;   font-weight: bold;
+    font-size: 20px; color: white;	font-family: Helvetica; padding: 5px; ">Alegeți automobilul</p>
+    <p id="un" class="stil">Autonomie: </p>
+    <p id="doi" class="stil">0-100km/h: </p>
+ 
+    <p id="trei" class="stil">Viteză maximă: </p>
+ 
+    <p id="patru" class="stil">Putere maximă:</p>
+
+    <p id="cinci" class="stil">Prețul: </p>
+
+    	<p id="Select">Procurați</p>
+	</div>
+	<div  style="background-color: white; width: 1600px; height: 200px;  margin-left: -10px;"></div>
+	<div class="cars" onclick="m5()" style="margin-left: 400px; background-image: url('sl1.png'); background-size: 160% ; background-position: center; background-repeat: no-repeat;">
+	</div>
+	<div class="cars1" onclick="m8()" style="margin-left: 600px; background-image: url('sl2.jpg'); background-size: 155% ; background-position: center; background-repeat: no-repeat; margin-top: -155px;">
+	</div>
+	<div class="cars1" onclick="x7()" style="margin-left: 800px; background-image: url('sl3.jpg'); background-size: 140% ; background-position: center; background-repeat: no-repeat; margin-top: -155px;">
+	</div>
+	<div class="cars1" onclick="i8()" style="margin-left: 1000px; background-image: url('sl4.jpg'); background-size: 162% ; background-position: center; background-repeat: no-repeat; margin-top: -155px;">
+	</div>
+
+
+</div>
+</body>
+<script type="text/javascript">
+
+	function m5() {
+
+		var m5 = document.getElementById('au');
+		var m = document.getElementById('un');
+		var m2 = document.getElementById('doi');
+		var m3 = document.getElementById('trei');
+		var m4 = document.getElementById('patru');
+		var mp = document.getElementById('cinci');
+text1='Autonomie: 840km';
+text2='0-100km/h: 3.3sec';
+text3='Viteză maximă: 305km/h';
+text4='Putere maximă: 625c/p';
+text5='BMW M5 F90';
+text6='Prețul: 88927,92 EURO';
+m.innerHTML = text1;
+m2.innerHTML = text2;
+m3.innerHTML = text3;
+m4.innerHTML = text4;
+m5.innerHTML = text5;
+mp.innerHTML = text6;
+
+  Select.onclick = function() {
+    	document.location.href = "E:/Lessons/Practica JS 2021/Constructor/M5/M5.html";
+    	localStorage.setItem("Marca","BMW M5 F90");
+    }
+	}
+	function m8() {
+
+		var m5 = document.getElementById('au');
+		var m = document.getElementById('un');
+		var m2 = document.getElementById('doi');
+		var m3 = document.getElementById('trei');
+		var m4 = document.getElementById('patru');
+		var mp = document.getElementById('cinci');
+text1='Autonomie: 800km';
+text2='0-100km/h: 3.2sec';
+text3='Viteză maximă: 250km/h';
+text4='Putere maximă: 625c/p';
+text5='BMW M8';
+text6='Prețul: 147890,28 EURO';
+m.innerHTML = text1;
+m2.innerHTML = text2;
+m3.innerHTML = text3;
+m4.innerHTML = text4;
+m5.innerHTML = text5;
+mp.innerHTML = text6;
+
+
+  Select.onclick = function() {
+    	document.location.href = "E:/Lessons/Practica JS 2021/Constructor/M8/M8.html";
+    		localStorage.setItem("Marca","BMW M8");
+    }
+	}
+	function x7() {
+
+		var m5 = document.getElementById('au');
+		var m = document.getElementById('un');
+		var m2 = document.getElementById('doi');
+		var m3 = document.getElementById('trei');
+		var m4 = document.getElementById('patru');
+		var mp = document.getElementById('cinci');
+text1='Autonomie: 940km';
+text2='0-100km/h: 5.4sec';
+text3='Viteză maximă: 250km/h';
+text4='Putere maximă: 400c/p';
+text5='BMW X7';
+text6='Prețul: 99742,54 EURO';
+m.innerHTML = text1;
+m2.innerHTML = text2;
+m3.innerHTML = text3;
+m4.innerHTML = text4;
+m5.innerHTML = text5;
+mp.innerHTML = text6;
+
+  Select.onclick = function() {
+    	document.location.href = "E:/Lessons/Practica JS 2021/Constructor/X7/X7.html";
+    		localStorage.setItem("Marca","BMW X7");
+    }
+	}
+	function i8() {
+
+		var m5 = document.getElementById('au');
+		var m = document.getElementById('un');
+		var m2 = document.getElementById('doi');
+		var m3 = document.getElementById('trei');
+		var m4 = document.getElementById('patru');
+		var mp = document.getElementById('cinci');
+text1='Autonomie: 600km';
+text2='0-100km/h: 4.4sec';
+text3='Viteză maximă: 250km/h';
+text4='Putere maximă: 362c/p';
+text5='BMW I8';
+text6='Prețul: 110182,67 EURO';
+m.innerHTML = text1;
+m2.innerHTML = text2;
+m3.innerHTML = text3;
+m4.innerHTML = text4;
+m5.innerHTML = text5;
+mp.innerHTML = text6;
+
+  Select.onclick = function() {
+    	document.location.href = "E:/Lessons/Practica JS 2021/Constructor/I8/I8.html";
+    		localStorage.setItem("Marca","BMW I8");
+    }
+	}
+
+	
+</script>
+</html>
